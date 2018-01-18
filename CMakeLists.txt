@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.9.3)
+cmake_minimum_required(VERSION 3.9.2)
 
 project(ipfilter VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 
