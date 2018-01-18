@@ -14,7 +14,7 @@ struct IpAdress
 	explicit IpAdress(const std::vector<std::string>& ip_adress)
 	{
 		std::transform(ip_adress.crbegin(), ip_adress.crend(), std::begin(m_data),
-			[](auto& var) { return static_cast<unsigned char>(std::stoi(var)); });
+			[](decltype(*std::begin(ip_adress)) var) { return static_cast<unsigned char>(std::stoi(var)); });
 	}
 	
 	/*
