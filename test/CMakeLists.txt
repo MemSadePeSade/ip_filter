@@ -11,7 +11,7 @@ set_target_properties(TestSplit PROPERTIES
 )
 
 target_link_libraries(TestSplit ${Boost_LIBRARIES})
-add_test(TestSplit TestSplit)
+add_test(TestSplit test/TestSplit)
 
 
 

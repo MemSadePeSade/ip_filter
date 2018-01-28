@@ -40,6 +40,7 @@ struct IpAdress
 	{
 		std::ostream_iterator<unsigned> out_it(os, ".");
 		std::copy(ip.m_data.crbegin(), ip.m_data.crend(), out_it);
+		os << '\b';  os << " "; // delete last "."
 		return os;
 	}
 };
